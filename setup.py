@@ -14,6 +14,8 @@ def get_requirements(typ='requirements.txt'):
    
 requirements = get_requirements()
 
+print(f'Requirements: {requirements}')
+
 extras = {
     'production': get_requirements('requirements_production.txt'),
     'AL': get_requirements('requirements_AL.txt')
