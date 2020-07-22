@@ -5,7 +5,7 @@ from os import path
 def get_requirements(typ='requirements.txt'):
    """Get requirements."""
    if path.exists(typ):
-      with open(typ) as f:
+      with open(typ, 'r') as f:
         requirements = f.read().splitlines()
    else:
      requirements = []
