@@ -9,7 +9,7 @@ def get_requirements(typ='requirements.txt'):
         requirements = f.read().splitlines()
    else:
      requirements = []
-   return [r.split()[0] for r in requirements if r and not r.startswith('#')]
+   return [r.split()[0] for r in requirements if r and not r.startswith('#') and not r.startswith('git+')]
    
    
 requirements = get_requirements()
