@@ -62,9 +62,9 @@ import sys
 
 def install_external_requirements(fn="external_requirements.py"):
    """Install additional requiremments eg including installs from github."""
-   #print(subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-cache-dir", "-r", fn ]))
-   requirements = get_requirements(fn, nogit=True)
-   for r in requirements:
-      print(subprocess.check_output([sys.executable, "-m", "pip", "install", "--no-cache-dir", r ]))
+   subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-cache-dir", "-r", fn ])
+   #requirements = get_requirements(fn, nogit=True)
+   #for r in requirements:
+   #   print(subprocess.check_output([sys.executable, "-m", "pip", "install", "--no-cache-dir", r ]))
  
 install_external_requirements("external_requirements.py")
