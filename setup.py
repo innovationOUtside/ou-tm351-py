@@ -62,6 +62,7 @@ import sys
 
 def install_external_requirements(fn="external_requirements.py"):
    """Install additional requiremments eg including installs from github."""
+   print(f"Installing external requirements from {fn}")
    subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-cache-dir", "-r", fn ])
    #requirements = get_requirements(fn, nogit=True)
    #for r in requirements:
