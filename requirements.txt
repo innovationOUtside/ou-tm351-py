@@ -101,6 +101,9 @@ nltk
 
 
 # OU Utils
+nb-extension-empinken
+nb_extension_tagstyler
+#git+https://github.com/innovationOUtside/nb_cell_dialog.git
 #git+https://github.com/innovationOUtside/nb_extension_odszip.git
 #git+https://github.com/fschulze/sqlalchemy_schemadisplay.git
 #git+https://github.com/innovationOUtside/ipython_magic_sqlalchemy_schemadisplay.git
