@@ -65,6 +65,6 @@ def install_external_requirements(fn="external_requirements.py"):
    #print(subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-cache-dir", "-r", fn ]))
    requirements = get_requirements(typ='requirements.txt', nogit=True)
    for r in requirements:
-      print(subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-cache-dir", r ]))
+      print(subprocess.check_output([sys.executable, "-m", "pip", "install", "--no-cache-dir", r ]))
  
 install_external_requirements("external_requirements.py")
