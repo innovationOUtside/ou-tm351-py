@@ -2,10 +2,10 @@ from setuptools import setup
 
 from os import path
 
-def get_requirements(typ='requirements.txt', nogit=True):
+def get_requirements(fn='requirements.txt', nogit=True):
    """Get requirements."""
-   if path.exists(typ):
-      with open(typ, 'r') as f:
+   if path.exists(fn):
+      with open(fn, 'r') as f:
         requirements = f.read().splitlines()
    else:
      requirements = []
@@ -63,7 +63,7 @@ import sys
 def install_external_requirements(fn="external_requirements.py"):
    """Install additional requiremments eg including installs from github."""
    #print(subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-cache-dir", "-r", fn ]))
-   requirements = get_requirements(typ='requirements.txt', nogit=True)
+   requirements = get_requirements(fn, nogit=True)
    for r in requirements:
       print(subprocess.check_output([sys.executable, "-m", "pip", "install", "--no-cache-dir", r ]))
  
