@@ -5,3 +5,7 @@ git+https://github.com/fschulze/sqlalchemy_schemadisplay.git
 git+https://github.com/innovationOUtside/ipython_magic_sqlalchemy_schemadisplay.git
 git+https://github.com/innovationOUtside/nb_workflow_tools.git
 git+https://github.com/innovationOUtside/tm351_utils.git
+
+git+https://github.com/innovationOUtside/nb_cell_dialog.git
+git+https://github.com/innovationOUtside/nb_cell_diff.git
+git+https://github.com/innovationOUtside/nb_cell_execution_status.git
