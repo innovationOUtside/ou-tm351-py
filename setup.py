@@ -58,5 +58,7 @@ setup(
 import subprocess
 import sys
 
-def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-cache-dir", "-r", "external_requirements.py" ])
+def install_external_requirements(fn):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-cache-dir", "-r", fn ])
+      
+install_external_requirements("external_requirements.py")
