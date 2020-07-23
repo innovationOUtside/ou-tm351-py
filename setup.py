@@ -53,3 +53,10 @@ setup(
         'Topic :: Scientific/Engineering :: Visualization'
     ],
 )
+
+
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-cache-dir", "-r", "external_requirements.py" ])
