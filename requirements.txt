@@ -77,7 +77,7 @@ jupyter-nbextensions-configurator
 jupyter-server-proxy
 jupyter-wysiwyg
 nbconvert
-jupyter-nbrequirements  # Dashboard showing requirements
+
 nbdime
 nbformat
 nbgrader
