@@ -2,15 +2,17 @@ from setuptools import setup
 
 from os import path
 
-def get_requirements(typ='requirements.txt'):
+def get_requirements(typ='requirements.txt', nogit=True):
    """Get requirements."""
    if path.exists(typ):
       with open(typ, 'r') as f:
         requirements = f.read().splitlines()
    else:
      requirements = []
-   return [r.split()[0] for r in requirements if r and not r.startswith('#') and not r.startswith('git+')]
-   
+   requirements = [r.split()[0].strip() for r in requirements if r and not r.startswith('#')]
+   if nogit:
+       requirements = [r for r in requirements if not r.startswith('git+')]
+   return requirements
    
 requirements = get_requirements()
 
@@ -58,7 +60,11 @@ setup(
 import subprocess
 import sys
 
-def install_external_requirements(fn):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-cache-dir", "-r", fn ])
-      
+def install_external_requirements(fn="external_requirements.py"):
+   """Install additional requiremments eg including installs from github."""
+   #print(subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-cache-dir", "-r", fn ]))
+   requirements = get_requirements(typ='requirements.txt', nogit=True)
+   for r in requirements:
+      print(subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-cache-dir", r ]))
+ 
 install_external_requirements("external_requirements.py")
