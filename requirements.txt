@@ -78,6 +78,7 @@ jupyter-server-proxy
 jupyter-wysiwyg
 nbconvert
 jupytext
+nbzip
 
 nbdime
 nbformat
