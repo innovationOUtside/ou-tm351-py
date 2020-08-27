@@ -60,7 +60,7 @@ setup(
 import subprocess
 import sys
 
-def install_external_requirements(fn="external_requirements.py"):
+def install_external_requirements(fn="external_requirements.txt"):
    """Install additional requiremments eg including installs from github."""
    print(f"Installing external requirements from {fn}")
    subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-cache-dir", "-r", fn ])
