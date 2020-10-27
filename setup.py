@@ -30,7 +30,7 @@ setup(
     description='Pyhton package installation for OU module TM351',
     name='ou-tm351-py',
     license='MIT',
-    url='innovationOUtside/ou-tm351-py',
+    url='https://github.com/innovationOUtside/innovationOUtside/ou-tm351-py',
     version='0.0.1',
 
     # Dependencies
