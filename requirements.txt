@@ -89,7 +89,6 @@ rise
 tqdm
 
 # Utils
-lunr # search
 python-dateutil
 python-editor
 python-magic
@@ -99,6 +98,7 @@ PyGithub
 jupyter-docx-bundler
 nb2xls
 autopep8
+memory_profiler
 
 # NLP
 nltk
