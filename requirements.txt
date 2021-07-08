@@ -19,6 +19,7 @@ normality
 pytimeparse
 pytz
 PyYAML
+pyarrow
 
 # Fake Data Generator
 Faker
