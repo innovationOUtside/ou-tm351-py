@@ -72,7 +72,6 @@ rdflib
 
 # Interactive
 ipywidgets
-ipytree
 
 # Jupyter
 jupyter-contrib-nbextensions
