@@ -20,6 +20,7 @@ pytimeparse
 pytz
 PyYAML
 pyarrow
+odfpy
 
 # Fake Data Generator
 Faker
