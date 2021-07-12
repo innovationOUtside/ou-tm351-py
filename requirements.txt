@@ -75,6 +75,9 @@ rdflib
 # Interactive
 ipywidgets
 
+# Streaming data
+streamz
+
 # Jupyter
 jupyter-contrib-nbextensions
 jupyter-highlight-selected-word
