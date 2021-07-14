@@ -78,6 +78,7 @@ ipywidgets
 
 # Streaming data
 streamz
+altair
 
 # Jupyter
 jupyter-contrib-nbextensions
