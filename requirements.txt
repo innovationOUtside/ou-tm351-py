@@ -107,6 +107,7 @@ python-slugify
 PyGithub
 #git+https://github.com/innovationOUtside/nb_extension_wordexport.git
 humanize
+inflect
 
 # This is throwing various errors
 #jupyter-docx-bundler
