@@ -27,7 +27,7 @@ setup(
     # Meta
     author='Tony Hirst',
     author_email='tony.hirst@open.ac.uk',
-    description='Pyhton package installation for OU module TM351',
+    description='Python package installation for OU module TM351',
     name='ou-tm351-py',
     license='MIT',
     url='https://github.com/innovationOUtside/innovationOUtside/ou-tm351-py',
