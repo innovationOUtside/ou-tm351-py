@@ -123,6 +123,8 @@ nltk
 # OU Utils
 nb-extension-empinken
 nb_extension_tagstyler
+nb_cell_execution_status
+
 #git+https://github.com/innovationOUtside/nb_cell_dialog.git
 #git+https://github.com/innovationOUtside/nb_extension_odszip.git
 #git+https://github.com/fschulze/sqlalchemy_schemadisplay.git
