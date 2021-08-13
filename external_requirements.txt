@@ -8,4 +8,4 @@ git+https://github.com/innovationOUtside/tm351_utils.git
 
 git+https://github.com/innovationOUtside/nb_cell_dialog.git
 git+https://github.com/innovationOUtside/nb_cell_diff.git
-git+https://github.com/innovationOUtside/nb_cell_execution_status.git
+#git+https://github.com/innovationOUtside/nb_cell_execution_status.git
