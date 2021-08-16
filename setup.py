@@ -20,7 +20,8 @@ print(f'Requirements: {requirements}')
 
 extras = {
     'production': get_requirements('requirements_production.txt'),
-    'AL': get_requirements('requirements_AL.txt')
+    'AL': get_requirements('requirements_AL.txt'),
+    'full': get_requirements('requirements_full.txt'),
     }
     
 setup(
@@ -31,9 +32,9 @@ setup(
     name='ou-tm351-py',
     license='MIT',
     url='https://github.com/innovationOUtside/innovationOUtside/ou-tm351-py',
-    version='0.0.4',
+    version='0.0.5',
     packages=['ou_tm351_py'],
-    
+
     # Dependencies
     install_requires=requirements,
     #setup_requires=[],
