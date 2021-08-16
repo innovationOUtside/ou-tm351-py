@@ -32,7 +32,7 @@ setup(
     name='ou-tm351-py',
     license='MIT',
     url='https://github.com/innovationOUtside/innovationOUtside/ou-tm351-py',
-    version='0.0.9',
+    version='0.0.10',
     packages=['ou_tm351_py'],
 
     # Dependencies
