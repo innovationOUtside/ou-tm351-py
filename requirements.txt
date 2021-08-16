@@ -127,6 +127,7 @@ nltk
 nb-extension-empinken
 nb_extension_tagstyler
 nb_cell_execution_status
+schemadisplay-magic
 
 #git+https://github.com/innovationOUtside/nb_cell_dialog.git
 #git+https://github.com/innovationOUtside/nb_extension_odszip.git
@@ -134,9 +135,10 @@ nb_cell_execution_status
 #git+https://github.com/innovationOUtside/ipython_magic_sqlalchemy_schemadisplay.git
 #git+https://github.com/innovationOUtside/nb_workflow_tools.git
 
+
 #"git+https://github.com/innovationOUtside/nb_extension_odszip.git"
-sqlalchemy_schemadisplay @ git+https://github.com/fschulze/sqlalchemy_schemadisplay.git@master
-schemadisplay-magic @ git+https://github.com/innovationOUtside/ipython_magic_sqlalchemy_schemadisplay.git
+#sqlalchemy_schemadisplay @ git+https://github.com/fschulze/sqlalchemy_schemadisplay.git@master
+#schemadisplay-magic @ git+https://github.com/innovationOUtside/ipython_magic_sqlalchemy_schemadisplay.git
 #"git+https://github.com/innovationOUtside/nb_workflow_tools.git"
 tm351_utils @ git+https://github.com/innovationOUtside/tm351_utils.git
 
