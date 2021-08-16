@@ -6,15 +6,15 @@ def get_requirements(fn='requirements.txt', nogit=True):
    """Get requirements."""
    if path.exists(fn):
       with open(fn, 'r') as f:
-        requirements = f.read().splitlines()
+        requirements = [r.split()[0].strip() for r in f.read().splitlines() if r and not r.startswith('#')]
    else:
      requirements = []
-   requirements = [r.split()[0].strip() for r in requirements if r and not r.startswith('#')]
+
    if nogit:
-       requirements = [r for r in requirements if not r.startswith('git+')]
+       requirements = [r for r in requirements if not 'git+' in r]
    return requirements
    
-requirements = get_requirements()
+requirements = get_requirements(nogit=False)
 
 print(f'Requirements: {requirements}')
 
@@ -32,7 +32,7 @@ setup(
     name='ou-tm351-py',
     license='MIT',
     url='https://github.com/innovationOUtside/innovationOUtside/ou-tm351-py',
-    version='0.0.5',
+    version='0.0.6',
     packages=['ou_tm351_py'],
 
     # Dependencies
@@ -78,4 +78,4 @@ def install_external_requirements(fn="external_requirements.txt"):
       except:
           print(f"Failed to install {r}")
    
-install_external_requirements("external_requirements.txt")
+#install_external_requirements("external_requirements.txt")
