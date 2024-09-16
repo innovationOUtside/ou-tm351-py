@@ -1,5 +1,6 @@
 # ou-tm351-py
-Python installation package for TM351
+
+Unofficial and unsupported Python installation package for TM351 — not guaranteed to accurately mimic the official VCE distribution.
 
 Install from pypi as: `pip install ou-tm351-py`
 
