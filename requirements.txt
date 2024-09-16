@@ -1,28 +1,41 @@
+ipywidgets>=8,<9
+
+# --------- Module Specific ----------
+
 # Data wrangling
+requests
 beautifulsoup4
 lxml
 html5lib
 chardet
 csvkit
+
+xlrd
+openpyxl
+#nb2xls
+
+python-magic # file type detection
+
+pytimeparse
 isodate
+pytz
+python-dateutil
+parsedatetime
+
 itables
 json-table-schema
 jsonschema
 messytables
 prettytable
-xlrd
-
-# Tables is in full deployment; errors on Mac without HDF5
-#tables
-
+tables
 tabulate
-requests
+genson
+
 webencodings
 normality
-pytimeparse
-pytz
+
 PyYAML
-pyarrow
+pyarrow==16.1.0
 odfpy
 treelib
 
@@ -32,115 +45,91 @@ pydbgen
 
 # Data analysis
 numexpr
-numpy
-pandas
-networkx
-openpyxl
+numpy<2.0.0
+pandas==2.2.2
 pandasql
-parsedatetime
-statsmodels
-patsy
-scipy
-scikit-learn
 
+scipy==1.13.1
+scikit-learn==1.5.0
+#scikit-image
+#jupyter_compare_view
+
+statsmodels==0.14.2
+patsy # ?replace by formulaic?
+formulaic
+
+networkx
+pydot
 
 # Geo
 descartes
 fastkml
-Fiona
-folium
+Fiona==1.9.6
+folium==0.16.0
 geographiclib
-geopandas
+geopandas==0.14.4
 geopy
 pygeoif
-Shapely
-
+Shapely==2.0.4
 
 # Diagramming
-#graphviz
+graphviz
 ipythonblocks
-matplotlib
+matplotlib==3.9.0
 mpld3
 plotly
-seaborn
-pydot3
+seaborn==0.13.2
 
 
 # Databases
 sqlparse
 psycopg2-binary
 pgspecial
-ipython-sql
+jupysql
+duckdb
+duckdb-engine
+#ipython-sql # DEPRECATED in favour of jupysql
 pymongo
 SPARQLWrapper
 SQLAlchemy
 rdflib
-
-# Interactive
-ipywidgets
+schemadisplay-magic>=0.0.7
 
 # Streaming data
 streamz
 altair
 
-# Jupyter
-jupyter-contrib-nbextensions
-jupyter-highlight-selected-word
-jupyter-latex-envs
-jupyter-nbextensions-configurator
-jupyter-server-proxy
-jupyter-wysiwyg
-nbconvert
-jupytext
-nbzip
-
-nbdime
-nbformat
-nbgrader
-nbresuse
-nbval
-rise
-tqdm
-
 # Utils
-python-dateutil
 python-editor
-python-magic
 python-slugify
 PyGithub
-#git+https://github.com/innovationOUtside/nb_extension_wordexport.git
-humanize
-inflect
 
-# This is throwing various errors
-#jupyter-docx-bundler
+humanize # eg numbers into human readable text
+inflect # eg inflect words, pluralise words
 
-nb2xls
-autopep8
+# Profiling
 memory_profiler
 
 # NLP
 nltk
 
+# Code trace
+snoop
+birdseye
 
-# OU Utils
-nb-extension-empinken
-nb_extension_tagstyler
-nb_cell_execution_status
-schemadisplay-magic
-
-#git+https://github.com/innovationOUtside/nb_cell_dialog.git
-#git+https://github.com/innovationOUtside/nb_extension_odszip.git
-#git+https://github.com/fschulze/sqlalchemy_schemadisplay.git
-#git+https://github.com/innovationOUtside/ipython_magic_sqlalchemy_schemadisplay.git
-#git+https://github.com/innovationOUtside/nb_workflow_tools.git
+# OU utilities
+tm351_nb_utils
+ou-logger
+#https://github.com/innovationOUtside/nb_workflow_tools/archive/refs/heads/master.zip
+#https://github.com/innovationOUtside/tm351_utils/archive/refs/heads/master.zip
 
 
-#"git+https://github.com/innovationOUtside/nb_extension_odszip.git"
-#sqlalchemy_schemadisplay @ git+https://github.com/fschulze/sqlalchemy_schemadisplay.git@master
-#schemadisplay-magic @ git+https://github.com/innovationOUtside/ipython_magic_sqlalchemy_schemadisplay.git
-#"git+https://github.com/innovationOUtside/nb_workflow_tools.git"
-#tm351_utils @ git+https://github.com/innovationOUtside/tm351_utils.git
+## TESTING EXTENSIONS
+#jupyter-power-usage
+jupyterlab_execute_time
+#jupyterlab-sql-explorer # Doesn't work?
+jupyterlab-spreadsheet-editor
 
-#"git+https://github.com/innovationOUtside/nb_cell_dialog.git"
-#"git+https://github.com/innovationOUtside/nb_cell_diff.git"
+## TESTING
+#https://github.com/ouseful-PR/nbval/archive/refs/heads/table-test.zip
+#pytest-html
